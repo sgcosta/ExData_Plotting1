@@ -1,6 +1,6 @@
 #### Project: Project 1 Coursera 
 #### Course: "Exploratory Data Analysis"
-#### Date: October 7, 2014
+#### Date: October 10, 2014
 #### Author: Costa, S.
 #### Plot: Plot 2
 
@@ -55,6 +55,7 @@ png("plot2.png",
     units  = 'px', 
     bg     = 'white')
 
+## Set Margins :: mar (for margin) argument.
 par(mar = c(6, 6, 5, 4))
 
 plot(tidyDataTable$Time, 

@@ -1,6 +1,6 @@
 #### Project: Project 1 Coursera 
 #### Course: "Exploratory Data Analysis"
-#### Date: October 7, 2014
+#### Date: October 10, 2014
 #### Author: Costa, S.
 #### Plot: Plot 4
 
@@ -55,6 +55,9 @@ png("plot4.png",
     units  = 'px', 
     bg     = 'white')
 
+
+## Set Margins and combine multiple plots into one overall graph 
+## mfrow=c(nrows, ncols)
 par(mfrow = c(2,2))
 
 ## Mini Plot 1
@@ -78,8 +81,9 @@ lines(tidyDataTable$Time,
       type = "S")
 
 ## Mini Plot 3
-plot(tidyDataTable$Time, tidyDataTable$Sub_metering_1, 
-     col="black",
+plot(tidyDataTable$Time, 
+     tidyDataTable$Sub_metering_1, 
+     col  = "black",
      xlab = "",
      xaxt = NULL,
      ylab = "Energy sub metering",
@@ -108,7 +112,8 @@ legend("topright",
        col = c("black", "red", "blue"),
        c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
        lty = 1,
-       box.lwd = 0)
+       box.lwd = 0,
+       bty  = "n")
 
 ## Mini Plot 4
 plot(tidyDataTable$Time, 

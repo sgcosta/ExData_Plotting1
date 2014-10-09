@@ -1,6 +1,6 @@
 #### Project: Project 1 Coursera 
 #### Course: "Exploratory Data Analysis"
-#### Date: October 7, 2014
+#### Date: October 10, 2014
 #### Author: Costa, S.
 #### Plot: Plot 1
 
@@ -56,7 +56,7 @@ png("plot1.png",
     bg     = 'white')
 
 hist(tidyDataTable$Global_active_power,
-     col  = "red",
+     col  = "orangered",
      main = "Global Active Power",
      xlab = "Global Active Power (kilowatts)",
      ylab = "Frequency")

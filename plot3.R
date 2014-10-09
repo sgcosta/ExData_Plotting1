@@ -1,6 +1,6 @@
 #### Project: Project 1 Coursera 
 #### Course: "Exploratory Data Analysis"
-#### Date: October 7, 2014
+#### Date: October 10, 2014
 #### Author: Costa, S.
 #### Plot: Plot 3
 
@@ -55,6 +55,7 @@ png("plot3.png",
     units  = 'px', 
     bg     = 'white')
 
+## Set Margins :: mar (for margin) argument.
 par(mar = c(7, 6, 5, 4))
 
 plot(tidyDataTable$Time, 
@@ -85,7 +86,7 @@ lines(tidyDataTable$Time,
 
 ## Legend
 legend("topright",
-       col=c("black", "red", "blue"),
+       col = c("black", "red", "blue"),
        c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
        lty = 1)
 
