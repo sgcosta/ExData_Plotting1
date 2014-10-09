@@ -56,7 +56,7 @@ png("plot1.png",
     bg     = 'white')
 
 hist(tidyDataTable$Global_active_power,
-     col  = "orangered",
+     col  = "red",
      main = "Global Active Power",
      xlab = "Global Active Power (kilowatts)",
      ylab = "Frequency")
